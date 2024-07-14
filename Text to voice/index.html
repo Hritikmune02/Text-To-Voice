@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Voice Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h3>Converting text to speech using the Web Speech API of Google Chrome.</h3>
+    <div class="container">
+        <textarea name="text" id="text" cols="30" rows="10" placeholder="Add text to speak."></textarea>
+        <div class="controls">
+            <label for="voice-select">Voice</label>
+            <select name="voice" id="voice-select"></select>
+            <br><br>
+            <label for="rate-select">Rate</label>
+            <input type="range" name="rate" id="rate-select" min="0" max="2" step="0.1" value="1">
+            <span id="rate-value">10</span>
+            <br><br>
+            <label for="pitch-select">Pitch</label>
+            <input type="range" name="pitch" id="pitch-select" min="0" max="2" step="0.1" value="1">
+            <span id="pitch-value">10</span>
+            <br><br>
+            <button id="btn">Speak</button>
+            <button id="pause">Pause</button>
+            <button id="resume">Resume</button>
+            <button id="cancel">Cancel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
